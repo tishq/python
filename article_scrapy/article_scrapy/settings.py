@@ -105,15 +105,15 @@ ITEM_PIPELINES = {
 # 不清空redis队列，允许接着爬
 # SCHEDULER_PERSIST = True
 # 自动清理redis里面的key
-# SCHEDULER_FLUSH_ON_START = False
+# SCHEDULER_FLUSH_ON_START = True
 # REDIS_ITEMS_KEY = '%(spider)s:items'
 
 # 为防止被识别为爬虫，应设置下载页面的延时时间
-# DOWNLOAD_DELAY = 1
+DOWNLOAD_DELAY = 3
 
 #set mongoDB
 MONGO_URI = 'localhost'
-MONGO_DATABASE = 'csdn_es'
+MONGO_DATABASE = 'csdn_nice'
 
 # set redis
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"
@@ -121,7 +121,7 @@ DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 REDIS_URL = 'redis://root@localhost:6379'
 
 # set ScrapyElasticSearch
-# ELASTICSEARCH_SERVERS = ['http://localhost:9200']
-# ELASTICSEARCH_INDEX = 'es_py1'
-# ELASTICSEARCH_TYPE = 'articles'
-# ELASTICSEARCH_UNIQ_KEY = 'url'  # Custom unique key
+ELASTICSEARCH_SERVERS = ['http://localhost:9200']
+ELASTICSEARCH_INDEX = 'es_py1'
+ELASTICSEARCH_TYPE = 'articles'
+ELASTICSEARCH_UNIQ_KEY = 'url'  # Custom unique key

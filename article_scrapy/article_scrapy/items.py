@@ -8,6 +8,7 @@
 import scrapy
 
 
+
 class ArticleScrapyItem(scrapy.Item):
     _id = scrapy.Field()
     title = scrapy.Field()
@@ -19,5 +20,7 @@ class ArticleScrapyItem(scrapy.Item):
     date = scrapy.Field()
     star = scrapy.Field()
     score = scrapy.Field()
-    content = scrapy.Field()
+    views =  scrapy.Field()
+    comments = scrapy.Field()
+    source = scrapy.Field()
     pass
