@@ -56,12 +56,12 @@ class Articles(Resource):
         for hit in res['hits']['hits']:
             article['title'] = hit['_source']['title']
             article['summary'] = hit['_source']['summary']
-            article['readCount'] = hit['_source']['readCount']
+            article['readCount'] = hit['_source']['views']
             article['author'] = hit['_source']['author']
             article['tag'] = hit['_source']['tag']
             article['url'] = hit['_source']['url']
             article['date'] = hit['_source']['date']
-            article['star'] = '星星'
+            article['star'] = hit['_source']['star']
             article['score'] = hit['_score']
             print(article)
 

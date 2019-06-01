@@ -16,7 +16,7 @@ class CsdnSpider(scrapy.Spider):
     _id = 0
 
     # 爬去的页面数,每个页面上有10篇文章信息
-    pageCount = 10000
+    pageCount = 1000000000000
 
     # csdn文章标签
     tags = ['career', 'web', 'arch', 'lang', 'db', 'game', 'mobile',
@@ -27,7 +27,7 @@ class CsdnSpider(scrapy.Spider):
     urls = []
 
     for tag in tags:
-        for i in range(pageCount):
+        for i in range(0,pageCount,1000000):
             data['type'] = 'more'
             data['category'] = tag
             data['shown_offset'] = i

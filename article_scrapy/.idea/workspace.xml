@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c7c970d-d394-4fa8-8316-ec02b03597b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Algorithm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article_scrapy/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/article_scrapy/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article_scrapy/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/article_scrapy/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/article_scrapy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/article_scrapy/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/article_scrapy/spiders/csdn.py" beforeDir="false" afterPath="$PROJECT_DIR$/article_scrapy/spiders/csdn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_rest_api/es_rest.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_rest_api/es_rest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/request/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/request/request.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/csdn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="37" column="38" selection-start-line="36" selection-start-column="4" selection-end-line="37" selection-end-column="38" />
+            <state relative-caret-position="325">
+              <caret line="59" column="36" lean-forward="true" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
               </folding>
@@ -40,17 +37,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/article_scrapy/settings.py">
+        <entry file="file://$PROJECT_DIR$/article_scrapy/middlewares.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/article_scrapy/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2354">
-              <caret line="107" column="12" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
+            <state relative-caret-position="352">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/csdn.json">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/github_first.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/article_scrapy/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -63,31 +81,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/github_first.py">
+        <entry file="file://$PROJECT_DIR$/request/request.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#24#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/github_first.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="54" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="54" />
+            <state relative-caret-position="88">
+              <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/request/request.py">
+        <entry file="file://$PROJECT_DIR$/flask_rest_api/es_rest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="247">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/github_first.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="54" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -111,20 +126,21 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/article_scrapy/pipelines.py" />
-        <option value="$PROJECT_DIR$/request/request.py" />
         <option value="$PROJECT_DIR$/article_scrapy/items.py" />
-        <option value="$PROJECT_DIR$/article_scrapy/spiders/csdn.py" />
-        <option value="$PROJECT_DIR$/article_scrapy/settings.py" />
         <option value="$PROJECT_DIR$/article_scrapy/spiders/github.py" />
         <option value="$PROJECT_DIR$/article_scrapy/spiders/github_first.py" />
+        <option value="$PROJECT_DIR$/article_scrapy/spiders/csdn.py" />
+        <option value="$PROJECT_DIR$/flask_rest_api/es_rest.py" />
+        <option value="$PROJECT_DIR$/request/request.py" />
+        <option value="$PROJECT_DIR$/article_scrapy/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="981" />
-    <option name="y" value="32" />
-    <option name="width" value="939" />
-    <option name="height" value="1048" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="260" />
+    <option name="y" value="56" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -154,6 +170,11 @@
             <path>
               <item name="article_scrapy" type="b2602c69:ProjectViewProjectNode" />
               <item name="article_scrapy" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_rest_api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="article_scrapy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="article_scrapy" type="462c0819:PsiDirectoryNode" />
               <item name="request" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -166,7 +187,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/article_scrapy/spiders" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Zhihu" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -305,17 +326,18 @@
       <workItem from="1559295437212" duration="921000" />
       <workItem from="1559301618209" duration="1269000" />
       <workItem from="1559303027766" duration="37000" />
+      <workItem from="1559358652825" duration="8943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27921000" />
+    <option name="totallyTimeSpent" value="36864000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="32" width="1877" height="1048" extended-state="6" />
+    <frame x="43" y="32" width="1877" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49886876" visible="true" weight="0.27523443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49886876" visible="true" weight="0.279647" />
       <window_info id="Structure" order="1" sideWeight="0.50113124" side_tool="true" weight="0.25758412" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -330,7 +352,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002758" side_tool="true" weight="0.32918552" />
       <window_info anchor="bottom" id="Python Console" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4997242" weight="0.26339287" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4997242" visible="true" weight="0.26244345" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -348,13 +370,6 @@
     <SUITE FILE_PATH="coverage/article_scrapy$request.coverage" NAME="request Coverage Results" MODIFIED="1559268765594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/request" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/flask_rest_api/es_rest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/elasticsearch_dsl/es_dsl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -382,17 +397,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article_scrapy/pipelines.py">
+    <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/csdn.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/github.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="418">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/csdn.py">
+    <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/github_first.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="37" column="38" selection-start-line="36" selection-start-column="4" selection-end-line="37" selection-end-column="38" />
+        <state relative-caret-position="22">
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/github_first.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
           </folding>
@@ -406,44 +431,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article_scrapy/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2354">
-          <caret line="107" column="12" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/csdn.json">
+    <entry file="file://$PROJECT_DIR$/article_scrapy/middlewares.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/github.py">
+    <entry file="file://$PROJECT_DIR$/article_scrapy/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="352">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/request/request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="88">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/github_first.py">
+    <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/csdn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="325">
+          <caret line="59" column="36" lean-forward="true" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/github_first.json">
+    <entry file="file://$PROJECT_DIR$/flask_rest_api/es_rest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="54" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="54" />
+        <state relative-caret-position="247">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article_scrapy/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
         </state>
       </provider>
     </entry>
