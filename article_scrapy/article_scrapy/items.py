@@ -10,10 +10,9 @@ import scrapy
 
 
 class ArticleScrapyItem(scrapy.Item):
-    _id = scrapy.Field()
+    articleId = scrapy.Field()
     title = scrapy.Field()
     summary = scrapy.Field()
-    readCount = scrapy.Field()
     author = scrapy.Field()
     tag = scrapy.Field()
     url = scrapy.Field()

@@ -100,14 +100,10 @@ DEFAULT_REQUEST_HEADERS = {
 ITEM_PIPELINES = {
     'article_scrapy.pipelines.MongoPipeline': 300,
     'scrapy_redis.pipelines.RedisPipeline': 100,
-    'scrapyelasticsearch.scrapyelasticsearch.ElasticSearchPipeline': 200
+    'article_scrapy.pipelines.EsPipeline': 200,
+    'article_scrapy.pipelines.MysqlPipeline': 400,
 }
 
-# 不清空redis队列，允许接着爬
-# SCHEDULER_PERSIST = True
-# 自动清理redis里面的key
-# SCHEDULER_FLUSH_ON_START = True
-# REDIS_ITEMS_KEY = '%(spider)s:items'
 
 # 为防止被识别为爬虫，应设置下载页面的延时时间
 DOWNLOAD_DELAY = 1
@@ -132,9 +128,18 @@ USER_AGENTS = [
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20",
     "Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; fr) Presto/2.9.168 Version/11.52"]
 
+
+# 不清空redis队列，允许接着爬
+# SCHEDULER_PERSIST = True
+# 自动清理redis里面的key
+SCHEDULER_FLUSH_ON_START = True
+# REDIS_ITEMS_KEY = '%(spider)s:items'
+
+
 #set mongoDB
 MONGO_URI = 'localhost'
-MONGO_DATABASE = 'csdn_nice'
+MONGO_DATABASE = 'csdn_test'
+MONGO_COLLECTION = 'scrapy_item'
 
 # set redis
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"
@@ -142,7 +147,14 @@ DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 REDIS_URL = 'redis://root@localhost:6379'
 
 # set ScrapyElasticSearch
-ELASTICSEARCH_SERVERS = ['http://localhost:9200']
+ELASTICSEARCH_URI = 'http://localhost:9200'
 ELASTICSEARCH_INDEX = 'es_py1'
 ELASTICSEARCH_TYPE = 'articles'
-ELASTICSEARCH_UNIQ_KEY = 'url'  # Custom unique key
+
+# set mysql
+MYSQL_URI = "localhost"
+MYSQL_DB = "test"
+MYSQL_USER = "root"
+MYSQL_PASSWORD = "Yn971022"
+MYSQL_TABLE = "ARTICLES"
+

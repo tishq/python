@@ -35,7 +35,7 @@ es = Elasticsearch("localhost:9200")
 
 # 根据关键词搜索文章的视图类
 class Articles(Resource):
-    def get(self):
+    def post(self):
         # 拿到post里面设置的args
         article_kwd = parser.parse_args()
 
@@ -51,12 +51,14 @@ class Articles(Resource):
         # 根据查询规则拿到结果
         res = es.search(index="es_py1", body=body)
 
+
+        articles.clear()
         # 取出需要的结果
         # print("Got %d Hits:" % res['hits']['total']['value'])
         for hit in res['hits']['hits']:
             article['title'] = hit['_source']['title']
             article['summary'] = hit['_source']['summary']
-            article['readCount'] = hit['_source']['views']
+            article['views'] = hit['_source']['views']
             article['author'] = hit['_source']['author']
             article['tag'] = hit['_source']['tag']
             article['url'] = hit['_source']['url']

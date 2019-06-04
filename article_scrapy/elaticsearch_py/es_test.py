@@ -36,11 +36,11 @@ es = Elasticsearch("localhost:9200")
 
 body = {"query": {"match_all": {}},
         "from":0,
-        "size":20}
+        "size":100}
 res = es.search(index="es_py1", body=body)
 print("Got %d Hits:" % res['hits']['total']['value'])
 for hit in res['hits']['hits']:
-    print("%(title)s %(tag)s: %(url)s" % hit["_source"])
+    print( hit['_source']['url'])
 
 
 
