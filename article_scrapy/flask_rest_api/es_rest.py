@@ -44,9 +44,16 @@ class Articles(Resource):
         print('查询关键词是'+kwd)
 
         # es_py查询规则
-        body = {"query": {"match_phrase": {'title': kwd}},
+        # body = {"query": {"match_phrase": {'title': kwd}},
+        #         # "from": 0,
+        #         "size": 10}
+        # body = {"query": {"multi_match" : {"query" : kwd,"fields": ["_all"],"fuzziness": "1"}},
+        #         # "from": 0,
+        #         "size": 10}
+        body = {"query": {"multi_match": {"query": kwd, "fields": ["title^1000","summary"]}},
                 # "from": 0,
                 "size": 10}
+
 
         # 根据查询规则拿到结果
         res = es.search(index="es_py1", body=body)
@@ -65,6 +72,7 @@ class Articles(Resource):
             article['date'] = hit['_source']['date']
             article['star'] = hit['_source']['star']
             article['score'] = hit['_score']
+            article['articleId'] = hit['_source']['articleId']
             print(article)
 
             # 这里不用直接用article,这样拿到的是对象引用
