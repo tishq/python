@@ -23,3 +23,4 @@ class ArticleScrapyItem(scrapy.Item):
     comments = scrapy.Field()
     source = scrapy.Field()
     pass
+# articleId title summary author author tag url date star score views comments source

@@ -98,10 +98,11 @@ DEFAULT_REQUEST_HEADERS = {
 }
 
 ITEM_PIPELINES = {
-    'article_scrapy.pipelines.MongoPipeline': 300,
-    'scrapy_redis.pipelines.RedisPipeline': 100,
-    'article_scrapy.pipelines.EsPipeline': 200,
-    'article_scrapy.pipelines.MysqlPipeline': 400,
+    # 'article_scrapy.pipelines.MongoPipeline': 300,
+    # 'scrapy_redis.pipelines.RedisPipeline': 100,
+    # 'article_scrapy.pipelines.EsPipeline': 200,
+    'article_scrapy.pipelines.NeoPipeline': 250,
+    # 'article_scrapy.pipelines.MysqlPipeline': 400,
 }
 
 
@@ -151,10 +152,18 @@ ELASTICSEARCH_URI = 'http://localhost:9200'
 ELASTICSEARCH_INDEX = 'es_py1'
 ELASTICSEARCH_TYPE = 'articles'
 
+# set Neo4j
+NEO_URI = "http://localhost:7474"
+NEO_USERNAME="neo4j"
+NEO_PASSWORD="Yn971022"
+
+
 # set mysql
 MYSQL_URI = "localhost"
 MYSQL_DB = "test"
 MYSQL_USER = "root"
 MYSQL_PASSWORD = "Yn971022"
 MYSQL_TABLE = "ARTICLES"
+
+
 

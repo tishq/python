@@ -9,6 +9,13 @@ from datetime import datetime
 from elasticsearch import Elasticsearch
 import pymysql
 
+from article_scrapy.kgnode import User,Article
+
+# 数据存储到mongodb
+from py2neo import Graph
+
+# py2neo4j
+from py2neo import Graph, Node, Relationship, NodeMatcher
 
 class MongoPipeline(object):
 
@@ -38,7 +45,7 @@ class MongoPipeline(object):
         self.db[self.collection_name].insert_one(dict(item))
         return item
 
-
+# 数据存储到elasticsearch
 class EsPipeline(object):
     def __init__(self, es_uri, es_index,es_doc_type):
         self.es_uri = es_uri
@@ -64,6 +71,48 @@ class EsPipeline(object):
         self.es.indices.refresh(index=self.es_index)
         return item
 
+
+
+# 数据存储到neo4j
+# 每篇文章对应一个文章节点
+class NeoPipeline(object):
+    def __init__(self, neo_uri, neo_username,neo_password):
+        self.neo_uri =neo_uri
+        self.neo_username = neo_username
+        self.neo_password = neo_password
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(
+            neo_uri=crawler.settings.get('NEO_URI'),
+            neo_username=crawler.settings.get('NEO_USERNAME'),
+            neo_password=crawler.settings.get('NeO_PASSWORD')
+        )
+
+    def open_spider(self, spider):
+        self.graph = Graph(self.neo_uri, username=self.neo_username, password= self.neo_password)
+
+
+    def process_item(self, item, spider):
+        i = dict(item)
+        art = Article()
+        art.articleId = i['articleId']
+        art.title = i['title']
+        art.summary = i['summary']
+        art.author = i['author']
+        art.tag = i['tag']
+        art.url = i['url']
+        art.date = i['date']
+        art.star = i['star']
+        art.score = i['score']
+        art.views = i['views']
+        art.comments = i['comments']
+        art.source = i['source']
+        self.graph.push(art)
+        return item
+# articleId title summary author  tag url date star score views comments source
+
+# 数据存储到mysql
 class MysqlPipeline(object):
 
 
