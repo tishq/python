@@ -9,8 +9,6 @@ import requests
 from article_scrapy.items import ArticleScrapyItem
 
 
-
-
 class CsdnSpider(scrapy.Spider):
     # csdn文章自增id
     aticleId = 0

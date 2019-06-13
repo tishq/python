@@ -101,7 +101,7 @@ ITEM_PIPELINES = {
     # 'article_scrapy.pipelines.MongoPipeline': 300,
     # 'scrapy_redis.pipelines.RedisPipeline': 100,
     # 'article_scrapy.pipelines.EsPipeline': 200,
-    'article_scrapy.pipelines.NeoPipeline': 250,
+    # 'article_scrapy.pipelines.NeoPipeline': 250,
     # 'article_scrapy.pipelines.MysqlPipeline': 400,
 }
 
@@ -140,7 +140,7 @@ SCHEDULER_FLUSH_ON_START = True
 #set mongoDB
 MONGO_URI = 'localhost'
 MONGO_DATABASE = 'csdn_test'
-MONGO_COLLECTION = 'scrapy_item'
+MONGO_COLLECTION = 'scrapy_items'
 
 # set redis
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"
@@ -154,8 +154,8 @@ ELASTICSEARCH_TYPE = 'articles'
 
 # set Neo4j
 NEO_URI = "http://localhost:7474"
-NEO_USERNAME="neo4j"
-NEO_PASSWORD="Yn971022"
+NEO_USERNAME = "neo4j"
+NEO_PASSWORD = "Yn971022"
 
 
 # set mysql

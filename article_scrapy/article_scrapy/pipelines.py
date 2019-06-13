@@ -9,13 +9,14 @@ from datetime import datetime
 from elasticsearch import Elasticsearch
 import pymysql
 
-from article_scrapy.kgnode import User,Article
-
 # 数据存储到mongodb
 from py2neo import Graph
 
 # py2neo4j
 from py2neo import Graph, Node, Relationship, NodeMatcher
+
+from article_scrapy.kgnode import Article, User
+
 
 class MongoPipeline(object):
 
@@ -71,8 +72,8 @@ class EsPipeline(object):
         self.es.indices.refresh(index=self.es_index)
         return item
 
-
-
+# NeoPipeline错误,弃用
+# graph = Graph("http://localhost:7474",username="neo4j",password="Yn971022")
 # 数据存储到neo4j
 # 每篇文章对应一个文章节点
 class NeoPipeline(object):

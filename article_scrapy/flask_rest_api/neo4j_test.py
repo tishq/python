@@ -1,6 +1,6 @@
 # py2neo测试 v4版本
 # http://localhost:7474/browser/
-import neo as neo
+
 from py2neo import Graph, Node, Relationship, NodeMatcher
 from py2neo.ogm import GraphObject, Property, RelatedFrom, RelatedTo
 
@@ -79,6 +79,8 @@ m2.title = "m2"
 graph.push(m2)
 m2.actors.add(p2)
 graph.push(m2)
+graph.push(m2)
+
 
 
 
