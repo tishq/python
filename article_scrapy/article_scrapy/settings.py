@@ -98,11 +98,11 @@ DEFAULT_REQUEST_HEADERS = {
 }
 
 ITEM_PIPELINES = {
-    # 'article_scrapy.pipelines.MongoPipeline': 300,
-    # 'scrapy_redis.pipelines.RedisPipeline': 100,
-    # 'article_scrapy.pipelines.EsPipeline': 200,
+    'article_scrapy.pipelines.MongoPipeline': 300,
+    'scrapy_redis.pipelines.RedisPipeline': 100,
+    'article_scrapy.pipelines.EsPipeline': 200,
     # 'article_scrapy.pipelines.NeoPipeline': 250,
-    # 'article_scrapy.pipelines.MysqlPipeline': 400,
+    'article_scrapy.pipelines.MysqlPipeline': 400,
 }
 
 
@@ -110,7 +110,6 @@ ITEM_PIPELINES = {
 DOWNLOAD_DELAY = 1
 # 禁用cookie
 COOKIES_ENABLED = False
-
 USER_AGENTS = [
     "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
     "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)",
@@ -153,9 +152,9 @@ ELASTICSEARCH_INDEX = 'es_py1'
 ELASTICSEARCH_TYPE = 'articles'
 
 # set Neo4j
-NEO_URI = "http://localhost:7474"
-NEO_USERNAME = "neo4j"
-NEO_PASSWORD = "Yn971022"
+# NEO_URI = "http://localhost:7474"
+# NEO_USERNAME = "neo4j"
+# NEO_PASSWORD = "Yn971022"
 
 
 # set mysql

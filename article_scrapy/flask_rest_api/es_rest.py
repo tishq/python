@@ -89,7 +89,7 @@ if __name__ == '__main__':
     app.run(
         # python es_rest.py 可以看到效果(生产环境)
         # host= '0.0.0.0',
-        # port= 8888,
+        port= 5001,
         debug=True
     )
 

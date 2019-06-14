@@ -10,11 +10,14 @@ from article_scrapy.items import ArticleScrapyItem
 
 
 class CsdnSpider(scrapy.Spider):
+    #去重集合
+    df = set()
+
     # csdn文章自增id
     aticleId = 0
 
     # 爬去的页面数,每个页面上有10篇文章信息
-    pageCount = 1
+    pageCount = 1000000
 
     # csdn文章标签
     tags = ['career', 'web', 'arch', 'lang', 'db', 'game', 'mobile',
@@ -25,7 +28,7 @@ class CsdnSpider(scrapy.Spider):
     urls = []
 
     for tag in tags:
-        for i in range(0,pageCount,1):
+        for i in range(0,pageCount,10000):
             data['type'] = 'more'
             data['category'] = tag
             data['shown_offset'] = i
@@ -44,24 +47,28 @@ class CsdnSpider(scrapy.Spider):
                     # 数据清洗
                     article['summary'] = re.sub(r'\s', '', article['summary'])
 
-                    # 创建item对象
-                    # 提取每一页相应的item元素
-                    item = ArticleScrapyItem()
-                    item['articleId'] = self.aticleId
-                    self.aticleId = self.aticleId + 1
-                    item['title'] = article['title']
-                    item['summary'] = article['summary']
-                    item['author'] = article['user_name']
-                    item['tag'] = article['tag']
-                    item['url'] = article['url']
-                    item['date'] = article['created_at']
-                    item['star'] = ''
-                    item['score'] = ''
-                    item['views'] = article['views']
-                    item['comments'] = article['comments']
-                    item['source'] = 'csdn'
-                    print(item)
-                    yield item
+
+                    # item去重
+                    if(not (article['title'] in self.df)):
+                        # 创建item对象
+                        # 提取每一页相应的item元素
+                        self.df.add(article['title'])
+                        item = ArticleScrapyItem()
+                        item['articleId'] = self.aticleId
+                        self.aticleId = self.aticleId + 1
+                        item['title'] = article['title']
+                        item['summary'] = article['summary']
+                        item['author'] = article['user_name']
+                        item['tag'] = article['tag']
+                        item['url'] = article['url']
+                        item['date'] = article['created_at']
+                        item['star'] = ''
+                        item['score'] = ''
+                        item['views'] = article['views']
+                        item['comments'] = article['comments']
+                        item['source'] = 'csdn'
+                        print(item)
+                        yield item
                 except:
                     print('item错误')
                     pass
