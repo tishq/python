@@ -130,7 +130,7 @@ USER_AGENTS = [
 
 
 # 不清空redis队列，允许接着爬
-# SCHEDULER_PERSIST = True
+SCHEDULER_PERSIST = True
 # 自动清理redis里面的key
 SCHEDULER_FLUSH_ON_START = True
 # REDIS_ITEMS_KEY = '%(spider)s:items'

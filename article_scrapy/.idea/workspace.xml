@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c7c970d-d394-4fa8-8316-ec02b03597b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69a165e0-879c-48d7-b875-50eaec679a70.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69a165e0-879c-48d7-b875-50eaec679a70.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/article_scrapy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/article_scrapy/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/article_scrapy/spiders/csdn.py" beforeDir="false" afterPath="$PROJECT_DIR$/article_scrapy/spiders/csdn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_rest_api/es_rest.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_rest_api/es_rest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_rest_api/kg.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_rest_api/kg_r.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_rest_api/kg_r.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_rest_api/kg_r.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,35 +46,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/csdn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="71" column="67" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flask_rest_api/kg_build_r.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-              <folding>
-                <element signature="e#17#40#0" expanded="true" />
-              </folding>
+        <entry file="das://69a165e0-879c-48d7-b875-50eaec679a70/schema/test/table/ARTICLES">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true">
+                <filter text="" />
+              </filtering>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flask_rest_api/kg_r.py">
+        <entry file="file://$PROJECT_DIR$/tools/redis_set.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="105" selection-start-line="105" selection-end-line="105" />
-              <folding>
-                <element signature="e#17#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="242">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python3.6/dist-packages/flask_restful/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9790">
-              <caret line="461" column="54" selection-start-line="461" selection-start-column="54" selection-end-line="461" selection-end-column="54" />
+        <entry file="das://69a165e0-879c-48d7-b875-50eaec679a70/schema/test/table/PERSON">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true">
+                <filter text="" />
+              </filtering>
             </state>
           </provider>
         </entry>
@@ -82,31 +92,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/article_scrapy/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2244">
-              <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
+            <state relative-caret-position="-333">
+              <caret line="134" column="18" lean-forward="true" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flask_rest_api/neo4j_test.py">
+        <entry file="file://$PROJECT_DIR$/tools/fillter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1430">
-              <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+            <state relative-caret-position="484">
+              <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
               <folding>
-                <element signature="e#50#107#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flask_rest_api/es_rest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1892">
-              <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
-              <folding>
-                <element signature="e#126#149#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,7 +126,7 @@
         <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/github.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -145,8 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/article_scrapy/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
-              <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+            <state relative-caret-position="792">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#193#207#0" expanded="true" />
               </folding>
@@ -194,19 +192,21 @@
         <option value="$PROJECT_DIR$/article_scrapy/pipelines.py" />
         <option value="$PROJECT_DIR$/flask_rest_api/kg.py" />
         <option value="$PROJECT_DIR$/flask_rest_api/kg_build_r.py" />
-        <option value="$PROJECT_DIR$/article_scrapy/spiders/csdn.py" />
-        <option value="$PROJECT_DIR$/article_scrapy/settings.py" />
         <option value="$PROJECT_DIR$/flask_rest_api/kg_build.py" />
         <option value="$PROJECT_DIR$/flask_rest_api/es_rest.py" />
         <option value="$PROJECT_DIR$/flask_rest_api/kg_r.py" />
+        <option value="$PROJECT_DIR$/tools/fillter.py" />
+        <option value="$PROJECT_DIR$/article_scrapy/settings.py" />
+        <option value="$PROJECT_DIR$/tools/redis_set.py" />
+        <option value="$PROJECT_DIR$/article_scrapy/spiders/csdn.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="257" />
     <option name="y" value="82" />
-    <option name="width" value="1390" />
-    <option name="height" value="998" />
+    <option name="width" value="1380" />
+    <option name="height" value="996" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -216,6 +216,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,23 +238,12 @@
             <path>
               <item name="article_scrapy" type="b2602c69:ProjectViewProjectNode" />
               <item name="article_scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="elaticsearch_py" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="article_scrapy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="article_scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="flask_rest_api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="article_scrapy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="article_scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="request" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -265,7 +255,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Zhihu" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -287,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.kg_build_r">
+  <component name="RunManager" selected="Python.redis_set">
     <configuration name="csdn" type="PythonConfigurationType" factoryName="Python">
       <module name="article_scrapy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -332,6 +322,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="fillter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="article_scrapy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/fillter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="kg" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="article_scrapy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -346,28 +358,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_rest_api/kg_r.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="kg_build" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="article_scrapy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask_rest_api" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_rest_api/kg_build.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -398,7 +388,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pipelines" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="redis_set" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="article_scrapy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -406,12 +396,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/article_scrapy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/article_scrapy/pipelines.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/redis_set.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -422,11 +412,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.kg_build_r" />
+        <item itemvalue="Python.redis_set" />
+        <item itemvalue="Python.fillter" />
         <item itemvalue="Python.kg" />
+        <item itemvalue="Python.kg_build_r" />
         <item itemvalue="Python.es_rest" />
-        <item itemvalue="Python.kg_build" />
-        <item itemvalue="Python.pipelines" />
       </list>
     </recent_temporary>
   </component>
@@ -489,11 +479,18 @@
       <workItem from="1560505154558" duration="593000" />
       <workItem from="1560509064487" duration="584000" />
       <workItem from="1560510022825" duration="1304000" />
+      <workItem from="1560517159238" duration="2187000" />
+      <workItem from="1560577190265" duration="6227000" />
+      <workItem from="1560584530009" duration="2291000" />
+      <workItem from="1560586850873" duration="2542000" />
+      <workItem from="1560589961022" duration="180000" />
+      <workItem from="1560590580385" duration="281000" />
+      <workItem from="1560591421106" duration="2449000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170593000" />
+    <option name="totallyTimeSpent" value="186750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="32" width="1877" height="1048" extended-state="6" />
@@ -515,12 +512,12 @@
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5002758" side_tool="true" weight="0.32579187" />
       <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4997242" weight="0.2622768" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4997242" visible="true" weight="0.280543" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.17815775" />
+      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.17815775" />
       <window_info anchor="right" id="Mongo Explorer" order="5" weight="0.4031991" />
       <window_info anchor="right" id="Redis Servers" order="6" weight="0.32984003" />
     </layout>
@@ -530,7 +527,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/article_scrapy$csdn.coverage" NAME="csdn Coverage Results" MODIFIED="1560494799111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/article_scrapy/spiders" />
-    <SUITE FILE_PATH="coverage/article_scrapy$kg.coverage" NAME="kg Coverage Results" MODIFIED="1560509457952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_rest_api" />
+    <SUITE FILE_PATH="coverage/article_scrapy$kg.coverage" NAME="kg Coverage Results" MODIFIED="1560518023013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_rest_api" />
     <SUITE FILE_PATH="coverage/article_scrapy$es_test.coverage" NAME="es_test Coverage Results" MODIFIED="1559436021893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/elaticsearch_py" />
     <SUITE FILE_PATH="coverage/article_scrapy$test.coverage" NAME="test Coverage Results" MODIFIED="1559784708875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_rest_api" />
     <SUITE FILE_PATH="coverage/article_scrapy$kg_build_r.coverage" NAME="kg_build_r Coverage Results" MODIFIED="1560511453023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_rest_api" />
@@ -538,7 +535,9 @@
     <SUITE FILE_PATH="coverage/article_scrapy$pipelines.coverage" NAME="pipelines Coverage Results" MODIFIED="1560341787277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/article_scrapy" />
     <SUITE FILE_PATH="coverage/article_scrapy$kg_build.coverage" NAME="kg_build Coverage Results" MODIFIED="1560504484574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_rest_api" />
     <SUITE FILE_PATH="coverage/article_scrapy$es_rest.coverage" NAME="es_rest Coverage Results" MODIFIED="1560505739407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_rest_api" />
+    <SUITE FILE_PATH="coverage/article_scrapy$fillter.coverage" NAME="fillter Coverage Results" MODIFIED="1560585952188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/article_scrapy$request.coverage" NAME="request Coverage Results" MODIFIED="1559645014644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/request" />
+    <SUITE FILE_PATH="coverage/article_scrapy$redis_set.coverage" NAME="redis_set Coverage Results" MODIFIED="1560594208999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/scrapy.cfg">
@@ -591,13 +590,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/article_scrapy/middlewares.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article_scrapy/kgnode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
     </entry>
     <entry file="file:///usr/local/lib/python3.6/dist-packages/py2neo/internal/connectors.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -652,30 +644,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://69a165e0-879c-48d7-b875-50eaec679a70/schema/test/table/PERSON">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://69a165e0-879c-48d7-b875-50eaec679a70/schema/test/table/ARTICLES">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/csdn.py">
+    <entry file="file://$PROJECT_DIR$/flask_rest_api/kg_build_r.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="1320">
+          <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
           <folding>
-            <element signature="e#24#35#0" expanded="true" />
+            <element signature="e#17#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -687,10 +661,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article_scrapy/settings.py">
+    <entry file="file://$PROJECT_DIR$/flask_rest_api/kg_r.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
+        <state relative-caret-position="2222">
+          <caret line="110" selection-start-line="110" selection-end-line="110" selection-end-column="26" />
+          <folding>
+            <element signature="e#17#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -701,6 +678,13 @@
           <folding>
             <element signature="e#50#107#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article_scrapy/kgnode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="26" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -724,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/github.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/article_scrapy/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -740,31 +717,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/article_scrapy/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        <state relative-caret-position="792">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#193#207#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_rest_api/kg_r.py">
+    <entry file="file://$PROJECT_DIR$/tools/fillter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="484">
+          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
           <folding>
-            <element signature="e#17#40#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_rest_api/kg_build_r.py">
+    <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/github.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="418">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/redis_set.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article_scrapy/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-333">
+          <caret line="134" column="18" lean-forward="true" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://69a165e0-879c-48d7-b875-50eaec679a70/schema/test/table/PERSON">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/csdn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="71" column="67" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
           <folding>
-            <element signature="e#17#40#0" expanded="true" />
+            <element signature="e#24#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://69a165e0-879c-48d7-b875-50eaec679a70/schema/test/table/ARTICLES">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
