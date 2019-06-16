@@ -142,7 +142,7 @@ class MysqlPipeline(object):
         self.cursor = self.db.cursor()
 
         # 使用 execute() 方法执行 SQL，如果表存在则删除
-        self.cursor.execute("DROP TABLE IF EXISTS ARTICLES")
+        # self.cursor.execute("DROP TABLE IF EXISTS ARTICLES")
         # 使用预处理语句创建表
         # sql = """CREATE TABLE `ARTICLES` (
         #   `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -159,22 +159,23 @@ class MysqlPipeline(object):
         #   `source` varchar(65535),
         #   PRIMARY KEY (`id`)
         # ) ENGINE=InnoDB DEFAULT CHARSET=utf8;"""
-        sql = """CREATE TABLE `ARTICLES` (
-                 `articleId` int(10),
-                 `title` varchar(65535),
-                 `summary` varchar(65535),
-                 `author` varchar(65535),
-                 `tag` varchar(65535),
-                 `url` varchar(65535),
-                 `date` varchar(65535),
-                 `star` varchar(65535),
-                 `score` varchar(65535),
-                 `views` varchar(65535),
-                 `comments` varchar(65535) ,
-                 `source` varchar(65535),
-                 PRIMARY KEY (`articleId`)
-               ) ENGINE=InnoDB DEFAULT CHARSET=utf8;"""
-        self.cursor.execute(sql)
+
+        # sql = """CREATE TABLE `ARTICLES` (
+        #          `articleId` int(10),
+        #          `title` varchar(65535),
+        #          `summary` varchar(65535),
+        #          `author` varchar(65535),
+        #          `tag` varchar(65535),
+        #          `url` varchar(65535),
+        #          `date` varchar(65535),
+        #          `star` varchar(65535),
+        #          `score` varchar(65535),
+        #          `views` varchar(65535),
+        #          `comments` varchar(65535) ,
+        #          `source` varchar(65535),
+        #          PRIMARY KEY (`articleId`)
+        #        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;"""
+        # self.cursor.execute(sql)
 
 
     def close_spider(self, spider):

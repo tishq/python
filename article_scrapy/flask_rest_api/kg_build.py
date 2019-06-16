@@ -82,7 +82,7 @@ for i in range(100):
     # 每个用户随机喜欢十篇文章
     # for j in range(10):
     #     # 生成一个1-60000之间的随机整数
-    #     r = random.randint(1, 10000)
+    #     r = random.randint(1, 100)
     #     print(r)
     #     user.like.add(Article.match(graph).where(articleId = r).first())
     #     graph.push(user)

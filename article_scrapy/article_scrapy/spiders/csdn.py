@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import json
+import random
 from urllib.parse import urlencode
 import re
+import time
 
 
 import scrapy
@@ -14,7 +16,7 @@ from article_scrapy.items import ArticleScrapyItem
 # 导入redis模块，通过python操作redis 也可以直接在redis主机的服务端操作缓存数据库
 import redis
 # host是redis主机，需要redis服务端和客户端都启动 redis默认端口是6379
-r = redis.Redis(host='localhost', port=6379, decode_responses=True)
+redisCoon = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
 
 class CsdnSpider(scrapy.Spider):
@@ -22,36 +24,46 @@ class CsdnSpider(scrapy.Spider):
     # df = set()
 
     # csdn文章自增id
-    aticleId = 0
+    # aticleId = 0
 
-    # 爬去的页面数,每个页面上有10篇文章信息
-    pageCount = 1000
 
-    # csdn文章标签
-    tags = ['career', 'web', 'arch', 'lang', 'db', 'game', 'mobile',
-            'ops', 'sec', 'cloud', 'engineering', 'iot', 'fund', 'avi', 'other']
-
-    data = { }
-
-    urls = []
-
-    for tag in tags:
-        for i in range(0,pageCount,1):
-            data['type'] = 'more'
-            data['category'] = tag
-            data['shown_offset'] = i
-            url = 'https://www.csdn.net/api/articles?' + urlencode(data.copy())
-            print(url)
-            urls.append(url)
     name = 'csdn'
-    allowed_domains = ['www.csdn.net']
-    start_urls = urls
 
-    #     bf = PyBloomFilter(conn=conn)           # 利用连接池连接Redis
-    #     bf.add('www.jobbole.com')               # 向Redis默认的通道添加一个域名
-    #     bf.add('www.luyin.org')                 # 向Redis默认的通道添加一个域名
-    #     print(bf.is_exist('www.zhihu.com'))     # 打印此域名在通道里是否存在，存在返回1，不存在返回0
+    def start_requests(self):
+        # 爬去的页面数,每个页面上有10篇文章信息
+        # pageCount =
 
+        # csdn文章标签
+        tags = ['career', 'web', 'arch', 'lang', 'db', 'game', 'mobile',
+                'ops', 'sec', 'cloud', 'engineering', 'iot', 'fund', 'avi', 'other']
+
+        data = {}
+
+        urls = []
+
+        for tag in tags:
+            for i in range(10000):
+
+                # 构造一个16位的随机数
+                so = '1506'
+
+                for j in range(12):
+                    a = random.randint(0,9)
+                    so = so + str(a)
+                print(so)
+
+                data['type'] = 'more'
+                data['category'] = tag
+                data['shown_offset'] = so
+                url = 'https://www.csdn.net/api/articles?' + urlencode(data.copy())
+                print(url)
+                # urls.append(url)
+
+                #延时
+                # time.sleep(3)
+                yield scrapy.Request(url, self.parse)
+
+    # start_urls = urls
 
 
     def parse(self, response):
@@ -69,7 +81,7 @@ class CsdnSpider(scrapy.Spider):
                 # if(bf.is_exist(article['title']) == 0 ):
 
                 # 利用redis集合去重
-                if(not r.sismember("articlesTitle",article['title'])):
+                if(not (redisCoon.sismember("articlesTitle",article['title']))):
 
                     # 用python set去重
                     # self.df.add(article['title'])
@@ -78,13 +90,13 @@ class CsdnSpider(scrapy.Spider):
                     # bf.add(article['title'])
 
                     # 利用redis集合去重
-                    r.sadd("articlesTitle",article['title'])
+                    redisCoon.sadd("articlesTitle",article['title'])
 
                     # 创建item对象
                     # 提取每一页相应的item元素
                     item = ArticleScrapyItem()
-                    item['articleId'] = self.aticleId
-                    self.aticleId = self.aticleId + 1
+                    item['articleId'] = redisCoon.hget('hash1', 'id')
+                    redisCoon.hincrby('hash1', 'id', amount=1)
                     item['title'] = article['title']
                     item['summary'] = article['summary']
                     item['author'] = article['user_name']
