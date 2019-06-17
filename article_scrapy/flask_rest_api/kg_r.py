@@ -30,71 +30,76 @@ def kgr(userId):
     # 推荐文章id列表
     articleId = []
 
-    # 根据userId找到和该用户有喜欢文章交集的用户
-    uu = graph.run("match p=(u1:User{userId:"+str(userId)+"})-[r1:LIKE]->(a1)<-[r2:LIKE]-(u2) "
-                   # "with u2, count(u2) as c " 
-                   # "set u2.c=c "
-                   # "ORDER BY u2.name DESC LIMIT 100 "
-                   "return u2.userId").data()
+    try:
 
-    # 拿到用户列表
-    us = []
-    for u in uu:
-        us.append(u['u2.userId'])
-    print('和%d用户可能相似的用户是' % userId)
-    print(us)
+        # 根据userId找到和该用户有喜欢文章交集的用户
+        uu = graph.run("match p=(u1:User{userId:"+str(userId)+"})-[r1:LIKE]->(a1)<-[r2:LIKE]-(u2) "
+                       # "with u2, count(u2) as c " 
+                       # "set u2.c=c "
+                       # "ORDER BY u2.name DESC LIMIT 100 "
+                       "return u2.userId").data()
 
-    # 根据userId找到和该用户有喜欢文章交集数最多的用户
-    um = Counter(us).most_common(1)[0][0]
-    print('推荐的相似用户是')
-    print(um)
+        # 拿到用户列表
+        us = []
+        for u in uu:
+            us.append(u['u2.userId'])
+        print('和%d用户可能相似的用户是' % userId)
+        print(us)
 
-    # 查找存userId用户看过的文章
-    a1 = graph.run("match p=(u1:User{userId:"+str(userId)+"})-[r1:LIKE]->(a1) "                                                                                            
-                   "with a1 " 
-                   # "set u2.c=c "
-                   "ORDER BY a1.articleId DESC LIMIT 100 "
-                   "return DISTINCT a1.articleId").data()
-    # 存userId用户看过的文章
-    ta = []
-    for a in a1:
-        ta.append(a['a1.articleId'])
-    ta = list(set(ta))
+        # 根据userId找到和该用户有喜欢文章交集数最多的用户
+        um = Counter(us).most_common(1)[0][0]
+        print('推荐的相似用户是')
+        print(um)
 
-    # 查找给userId用户推荐的文章
-    a2 = graph.run("match p=(u2:User{userId:" + str(um) + "})-[r2:LIKE]->(a2) "
-                   "with a2 "
-                    # "set u2.c=c "
-                    "ORDER BY a2.articleId DESC LIMIT 100 "
-                    "return DISTINCT a2.articleId").data()
-    # 存给userId用户推荐的文章
-    ra = []
-    print("%d 用户看过的文章是" % userId)
-    print(ta)
+        # 查找存userId用户看过的文章
+        a1 = graph.run("match p=(u1:User{userId:"+str(userId)+"})-[r1:LIKE]->(a1) "                                                                                            
+                       "with a1 " 
+                       # "set u2.c=c "
+                       "ORDER BY a1.articleId DESC LIMIT 100 "
+                       "return DISTINCT a1.articleId").data()
+        # 存userId用户看过的文章
+        ta = []
+        for a in a1:
+            ta.append(a['a1.articleId'])
+        ta = list(set(ta))
 
-    # 存共同看过的文章
-    ea = []
-    # 计数共同看过的文章
-    e = 0
-    for a in a2:
-        # 去除已经看过的文章
-        if a['a2.articleId'] not in ta:
-            ra.append(a['a2.articleId'])
-        else:
-            e = e+1
-            ea.append(a['a2.articleId'])
+        # 查找给userId用户推荐的文章
+        a2 = graph.run("match p=(u2:User{userId:" + str(um) + "})-[r2:LIKE]->(a2) "
+                       "with a2 "
+                        # "set u2.c=c "
+                        "ORDER BY a2.articleId DESC LIMIT 100 "
+                        "return DISTINCT a2.articleId").data()
+        # 存给userId用户推荐的文章
+        ra = []
+        print("%d 用户看过的文章是" % userId)
+        print(ta)
 
-    # ra = list(set(ra))
+        # 存共同看过的文章
+        ea = []
+        # 计数共同看过的文章
+        e = 0
+        for a in a2:
+            # 去除已经看过的文章
+            if a['a2.articleId'] not in ta:
+                ra.append(a['a2.articleId'])
+            else:
+                e = e+1
+                ea.append(a['a2.articleId'])
 
-    print("共同看过的文章共有")
-    print(e)
-    print("共同看过的文章是")
-    print(ea)
+        # ra = list(set(ra))
 
-    print("给%d 用户看过的文章是" % userId)
-    print(ra)
+        print("共同看过的文章共有")
+        print(e)
+        print("共同看过的文章是")
+        print(ea)
 
-    return ra
+        print("给%d 用户看过的文章是" % userId)
+        print(ra)
+
+        return ra
+    except:
+        articleId.clear()
+        return articleId
 
 class ArticlesR(Resource):
     def get(self,userId):

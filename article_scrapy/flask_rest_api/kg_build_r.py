@@ -61,7 +61,7 @@ class UAR(Resource):
         aId = int(articleId)
 
         u = User.match(graph).where(userId=uId).first()
-        a = Article.match(graph).where(articleId=aId).first()
+        a = Article.match(graph).where(articleId=1).first()
         print(u)
         print(a)
         u.like.add(a)

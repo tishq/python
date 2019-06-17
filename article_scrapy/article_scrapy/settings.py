@@ -107,7 +107,7 @@ ITEM_PIPELINES = {
 
 
 # 为防止被识别为爬虫，应设置下载页面的延时时间
-DOWNLOAD_DELAY = 3
+DOWNLOAD_DELAY = 1
 # 禁用cookie
 COOKIES_ENABLED = False
 USER_AGENTS = [

@@ -28,7 +28,7 @@ class PythontutorialSpider(scrapy.Spider):
             if(not redisCoon.sismember('articlsTitle',title)):
                 redisCoon.sadd('articlesTitle',title)
                 item = ArticleScrapyItem()
-                item['articleId'] = redisCoon.hget('hash1', 'id')
+                item['articleId'] = int(redisCoon.hget('hash1', 'id'))
                 redisCoon.hincrby('hash1', 'id', amount=1)
                 item['title'] = title
                 item['summary'] = ''

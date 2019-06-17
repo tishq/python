@@ -95,7 +95,7 @@ class CsdnSpider(scrapy.Spider):
                     # 创建item对象
                     # 提取每一页相应的item元素
                     item = ArticleScrapyItem()
-                    item['articleId'] = redisCoon.hget('hash1', 'id')
+                    item['articleId'] = int(redisCoon.hget('hash1', 'id'))
                     redisCoon.hincrby('hash1', 'id', amount=1)
                     item['title'] = article['title']
                     item['summary'] = article['summary']

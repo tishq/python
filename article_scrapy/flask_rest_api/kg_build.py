@@ -55,6 +55,7 @@ for document in documents:
 
     article = Article()
     article.articleId=document['articleId']
+    print(type(article.articleId))
     article.title = document['title']
     article.summary = document['summary']
     article.author = document['author']

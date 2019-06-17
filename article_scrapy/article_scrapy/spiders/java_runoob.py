@@ -20,8 +20,8 @@ class JavaRunoobSpider(scrapy.Spider):
             selectXpath = '//*[@id="leftcolumn"]/a['+str(i)+']'
             select = response.xpath(selectXpath)
 
-
-            url = domsins + select.xpath('text()').extract_first()
+            title = select.xpath('text()').extract_first()
+            url = domsins + select.xpath('@href').extract_first()
             title = re.sub(r'\s', '', title)
             print(title)
             print(url)
@@ -30,7 +30,7 @@ class JavaRunoobSpider(scrapy.Spider):
                 redisCoon.sadd("articlesTitle", title)
 
                 item = ArticleScrapyItem()
-                item['articleId'] = redisCoon.hget('hash1', 'id')
+                item['articleId'] = int(redisCoon.hget('hash1', 'id'))
                 redisCoon.hincrby('hash1', 'id', amount=1)
                 item['title'] = title
                 item['summary'] = ''
