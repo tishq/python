@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c7c970d-d394-4fa8-8316-ec02b03597b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article_scrapy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/article_scrapy/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article_scrapy/spiders/csdn.py" beforeDir="false" afterPath="$PROJECT_DIR$/article_scrapy/spiders/csdn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article_scrapy/spiders/github_first.py" beforeDir="false" afterPath="$PROJECT_DIR$/article_scrapy/spiders/github_first.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article_scrapy/spiders/html.py" beforeDir="false" afterPath="$PROJECT_DIR$/article_scrapy/spiders/html.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article_scrapy/spiders/java_runoob.py" beforeDir="false" afterPath="$PROJECT_DIR$/article_scrapy/spiders/java_runoob.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article_scrapy/spiders/pythonTutorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/article_scrapy/spiders/pythonTutorial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article_scrapy/spiders/python_org.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_rest_api/kg_build.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_rest_api/kg_build.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_rest_api/kg_build_r.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_rest_api/kg_build_r.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_rest_api/kg_r.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_rest_api/kg_r.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/redis_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/redis_set.py" afterDir="false" />
-    </list>
+    <list default="true" id="3c7c970d-d394-4fa8-8316-ec02b03597b5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,18 +41,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/article_scrapy/spiders/python_org.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
-              <folding>
-                <element signature="e#24#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/article_scrapy/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3652">
@@ -91,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flask_rest_api/kg_build.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
+            <state relative-caret-position="528">
               <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -103,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flask_rest_api/kg_build_r.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
+            <state relative-caret-position="1430">
               <caret line="75" column="24" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
               <folding>
                 <element signature="e#17#40#0" expanded="true" />
@@ -112,13 +87,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flask_rest_api/kg_r.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+            <state relative-caret-position="230">
+              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
               <folding>
                 <element signature="e#17#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flask_rest_api/es_rest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="30" />
+              <folding>
+                <element signature="e#126#149#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -548,16 +535,18 @@
       <workItem from="1560748516473" duration="198000" />
       <workItem from="1560759201608" duration="681000" />
       <workItem from="1560763073172" duration="1168000" />
+      <workItem from="1560776409320" duration="685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223346000" />
+    <option name="totallyTimeSpent" value="224031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="32" width="1877" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49886876" visible="true" weight="0.2504137" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49886876" visible="true" weight="0.2504137" />
       <window_info id="Structure" order="1" sideWeight="0.50113124" side_tool="true" weight="0.25758412" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32918552" />
@@ -573,7 +562,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5002758" side_tool="true" weight="0.32579187" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32918552" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.4997242" visible="true" weight="0.28733033" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4997242" visible="true" weight="0.29072398" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -702,16 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flask_rest_api/es_rest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1892">
-          <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
-          <folding>
-            <element signature="e#126#149#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -882,6 +861,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flask_rest_api/kg_build.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_rest_api/kg_build_r.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1430">
+          <caret line="75" column="24" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
+          <folding>
+            <element signature="e#17#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tools/redis_set.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -919,32 +918,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_rest_api/kg_build.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flask_rest_api/kg_build_r.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="75" column="24" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
-          <folding>
-            <element signature="e#17#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flask_rest_api/kg_r.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+        <state relative-caret-position="230">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
           <folding>
             <element signature="e#17#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_rest_api/es_rest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="30" />
+          <folding>
+            <element signature="e#126#149#0" expanded="true" />
           </folding>
         </state>
       </provider>
