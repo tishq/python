@@ -73,7 +73,7 @@ for document in documents:
 
 
 # 建立用户节点
-for i in range(100):
+for i in range(100,101):
     user = User()
     user.userId = i
     user.name = 'user' + str(i)
