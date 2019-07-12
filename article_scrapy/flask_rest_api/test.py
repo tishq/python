@@ -14,13 +14,12 @@ api = Api(app)
 
 class ArticlesR(Resource):
     def get(self,userId):
-        # userId = int(parser.parse_args()['userId'])
         print(userId)
         print(type(userId))
 
         return userId
 
-api.add_resource(ArticlesR, '/articles/<userId>')
+api.add_resource(ArticlesR, '/articles?<string:userId>')
 
 if __name__ == '__main__':
     app.run(
