@@ -1,6 +1,6 @@
 import math
 
-data = "1 2.0 3 4 5.9 6 7 8 9"
+data = "406 1764.2 11.5 775 1682.9 20.1 920 2291.6 38.1"
 
 def getResult(data):
     lists = data.split()
@@ -56,7 +56,72 @@ def getResult(data):
         fqa += fq[i]
         pqa += pq[i]
 
-# 高斯列主元消去法解正则方程组
+    # 高斯列主元消去法解正则方程组
+    left = [[line,fa,pa],[fa,ffa,fpa],[pa,fpa,ppa]]
+    right = [qa,fqa,pqa]
+
+
+    # 找到每一列中最大的元素
+    for k in range(line-1):
+        v = 0
+        row = 0
+        for i in range(k,line):
+            if math.fabs(left[i][k])>v:
+                v = left[i][k]
+                col = k
+                row = i
+
+        # 不能求解
+        if left[row][row] == 0:
+            print("NO")
+            return "NO"
+
+
+        print("交换前")
+        print(left)
+        print(right)
+
+        # 交换
+        if row!=k:
+            t = left[k]
+            left[k] = left[row]
+            left[row] = t
+
+            tt = right[k]
+            right[k] = right[row]
+            right[row] = tt
+
+        print("交换后")
+        print(left)
+        print(right)
+
+        # 消元
+        c = [0,0,0]
+        for j in range(k+1,line):
+            c[j]=left[j][k]/left[k][k]
+        print("消元因子")
+        print(c)
+        for i in range(k+1,line):
+            for j in range(line):
+                left[i][j] = left[i][j] - c[i]*left[k][j]
+            right[i] = right[i] - c[i]*right[k]
+        print("消元后")
+        print(left)
+        print(right)
+
+
+    # 回代求解
+    x = [0,0,0]
+    x[line-1] = right[line-1]/left[line-1][line-1]
+
+    for i in range(line-2,-1,-1):
+        sum = 0
+        for j in range(i+1,line):
+            sum+=(left[i][j]*x[j])
+        x[i] = (right[i] - sum)/left[i][i]
+    x[0] = math.exp(x[0])
+    print(x)
+
 
 
 
@@ -64,5 +129,8 @@ def getResult(data):
 
 
 getResult(data)
+
+
+
 
 

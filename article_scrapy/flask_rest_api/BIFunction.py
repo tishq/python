@@ -1,4 +1,7 @@
 import math
+
+# data = "406 1764.2 11.5 775 1682.9 20.1 920 2291.6 38.1"
+
 def getResult(data):
     lists = data.split()
     n = len(lists)
@@ -53,10 +56,81 @@ def getResult(data):
         fqa += fq[i]
         pqa += pq[i]
 
+    # 高斯列主元消去法解正则方程组
+    left = [[line,fa,pa],[fa,ffa,fpa],[pa,fpa,ppa]]
+    right = [qa,fqa,pqa]
+
+    # 正则方程组m*m
+    m=3
+
+    # 找到每一列中最大的元素
+    for k in range(m-1):
+        v = 0
+        row = 0
+        for i in range(k,m):
+            if math.fabs(left[i][k])>v:
+                v = left[i][k]
+                col = k
+                row = i
+
+        # 不能求解
+        if left[row][row] == 0:
+            print("NO")
+            return "NO"
+
+
+        print("交换前")
+        print(left)
+        print(right)
+
+        # 交换
+        if row!=k:
+            t = left[k]
+            left[k] = left[row]
+            left[row] = t
+
+            tt = right[k]
+            right[k] = right[row]
+            right[row] = tt
+
+        print("交换后")
+        print(left)
+        print(right)
+
+        # 消元
+        c = [0]*m
+        for j in range(k+1,m):
+            c[j]=left[j][k]/left[k][k]
+        print("消元因子")
+        print(c)
+        for i in range(k+1,m):
+            for j in range(m):
+                left[i][j] = left[i][j] - c[i]*left[k][j]
+            right[i] = right[i] - c[i]*right[k]
+        print("消元后")
+        print(left)
+        print(right)
+
+
+    # 回代求解
+    x = [0]*m
+    x[m-1] = right[m-1]/left[m-1][m-1]
+
+    for i in range(m-2,-1,-1):
+        sum = 0
+        for j in range(i+1,m):
+            sum+=(left[i][j]*x[j])
+        x[i] = (right[i] - sum)/left[i][i]
+    x[0] = math.exp(x[0])
+    print(x)
+    return x
+
+
 
 # flask restfull
-from flask import Flask
+from flask import Flask, render_template, make_response
 from flask_restful import reqparse, abort, Api, Resource
+
 
 app = Flask(__name__)
 api = Api(app)
@@ -74,9 +148,9 @@ class BIFunction(Resource):
         datav = data['data']
         print('数据:'+datav)
 
-        result = getResult(datav)
+        results = getResult(datav)
 
-        return result
+        return make_response(render_template('index.html',results=results))
 
 
 
