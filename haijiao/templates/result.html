@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<body style="background: #d1e2ff ">
+
+    <div style="width: auto;height: 50px;background: #d1e2ff"></div>
+     <div  style="border-radius:20px;width:768px;height:768px;background:white;margin:auto;">
+        <p style="color:black;font-size:28px;">Q=a*(F^b)*(P^c)</p>
+        <p style="color:black;font-size:28px;">下面三个数分表代表a,b,c</p>
+
+        {% for result in results %}
+            <p style="color:blue;font-size:28px;">
+                {{ result }}
+            </p>
+        {% endfor %}
+    </div>
+
+
+
+</body>
+</html>
