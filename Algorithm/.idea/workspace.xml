@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fbe4fac-e181-4cf1-bea2-8f3cc15a187e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise01/10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise01/11.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise01/12.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise01/13.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise01/14.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise01/15.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/16.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise01/16.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/17.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise01/17.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5IsDay.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise01/5IsDay.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7Narcissus.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise01/7Narcissus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8Bonus.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise01/8Bonus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9Prime.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercise01/9Prime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/第二章 数据处理工具实验.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/exercise01/第二章 数据处理工具实验.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dateStructure/day01.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateStructure/day01.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/dateStructure/day01.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -66,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="43" />
     <option name="y" value="32" />
     <option name="width" value="939" />
@@ -80,6 +67,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -100,7 +88,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,17 +257,18 @@
       <workItem from="1559224846740" duration="14000" />
       <workItem from="1559285927445" duration="3000" />
       <workItem from="1564192190069" duration="1024000" />
+      <workItem from="1565598417610" duration="436000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16447000" />
+    <option name="totallyTimeSpent" value="16883000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="32" width="1877" height="1048" extended-state="7" />
+    <frame x="43" y="32" width="1237" height="928" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20518477" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20460358" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -296,12 +284,12 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Mongo Explorer" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Mongo Explorer" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +377,7 @@
     <entry file="file://$PROJECT_DIR$/dateStructure/day01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
